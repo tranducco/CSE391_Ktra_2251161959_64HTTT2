@@ -1,0 +1,27 @@
+#container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(85, 0, 255);
+        }
+.header-banner {
+            background-color: #6208ff ; 
+        }
+.header-banner h3 {
+            color: #fffafa;
+        }
+.header-banner p {
+            color: #f6f6f6;
+        }
+.header-banner h4 {
+            color: black;
+        }
+.custom-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+.body{
+            background-color: #f8f9fa;
+            color: black;
+        }
