@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <style>
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(85, 0, 255);
+        }
+        .header-banner {
+            background-color: #6208ff ; 
+        }
+        .header-banner h3 {
+            color: #fffafa;
+        }
+        .header-banner p {
+            color: #f6f6f6;
+        }
+        .header-banner h4 {
+            color: black;
+        }
+        .custom-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+        .body{
+            background-color: #f8f9fa;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-banner text-white p-4 rounded-4 mb-4 shadow-sm">
+            <h3 class="fw-bold mb-2">Quản lý danh sách sản phẩm</h3>
+            <p class="mb-0 opacity-75 small">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ ràng.</p>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-lg-4">
+                <div class="add-product container mb-4">
+                    <div class="header-banner text-white p-4 rounded-4 mb-4 shadow-sm">
+                        <h5>Thêm sản phẩm mới</h5>
+                        <p class="mb-0 opacity-75 small">Nhập đầy đủ thông tin sản phẩm vào danh sách</p>
+                        <h5 id="product-name">Tên sản phẩm</h5>
+                        <input type="text" class="form-control mb-3" placeholder="Nhập tên sản phẩm">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">Danh mục</label>
+                            <select class="form-select text-muted">
+                                <option selected>-- Chọn danh mục --</option>
+                                <option value="1">Điện thoại</option>
+                                <option value="2">Laptop</option>
+                                <option value="3">Phụ kiện</option>
+                            </select>
+                        </div>
+
+                        <h5 id="price">Giá</h5>
+                        <input type="number" class="form-control mb-3" placeholder="Nhập giá sản phẩm">
+                        <h5 id ="status">Trạng thái</h5>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>Còn hàng</option>
+                                <option value="0">Hết hàng</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary">Thêm sản phẩm</button>
+                        <button class="btn btn-light border">Làm mới form</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div id="product-list">
+                    <h4 class="mb-3">Danh sách sản phẩm</h4>
+                    <p class="mb-0 opacity-75 small">Danh sách sản phẩm mẫu được hiển thị từ dữ liệu hệ thống</p>
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr> 
+                                <th scope="col">STT</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Danh mục</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>iPhone 15</td>
+                                <td>Điện thoại</td>
+                                <td>20.000.000đ</td>
+                                <td><span class="badge bg-success">Còn hàng</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>MacBook Pro M2</td>
+                                <td>Laptop</td>
+                                <td>35.000.000đ</td>
+                                <td><span class="badge bg-success">Còn hàng</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>AirPods Pro 2</td>
+                                <td>Tai nghe</td>
+                                <td>5.000.000đ</td>
+                                <td><span class="badge bg-danger">Hết hàng</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
